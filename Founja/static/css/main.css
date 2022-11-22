@@ -1,0 +1,100 @@
+/* body */
+*{
+    border-color: #111;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header-wrapper{
+    border: none;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    display: flex;
+}
+.logo-wrapper{
+    position: relative;
+    border: none;
+    padding-top: 5px;
+    left: 5px;
+}
+
+.logo-wrapper a{
+    border: none;
+}
+
+.nav-wrapper {
+    border: none;
+    position: relative;
+    width: 100%;
+}
+
+.nav-wrapper a{
+    border: none;
+    float: right;
+    font-size: 30px;
+    padding: 20px;
+}
+
+main{
+    top: 80px;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    height:  1000px;
+}
+
+.Login-container{
+    height: 700px;
+    line-height: 700px;
+}
+
+.Login-Button-User {
+    color: black;
+    padding: 175px 175px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 12%;
+    transition-duration: 0.4s;
+    border-radius: 2%;
+}
+
+.Login-Button-Business {
+    color: black;
+    padding: 175px 175px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 2%;
+}
+
+.Login-Button-User:hover {
+    background-color: whitesmoke;
+    color: white;
+}
+
+.Login-Button-Business:hover{
+    background-color: whitesmoke;
+    color: white;
+}
+
+footer{
+    background-color: white;
+    height: 200px;
+    width: 70%;
+    margin: auto;
+}
