@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class = "Login-container">
-    <button class="Login-Button-User">User Login</a></button>
-    <button class="Login-Button-Business">Business Login</button>
+    <a class="Login-Button-User" href="{{url_for("main.userlogin")}}">User Login</a>
+    <a class="Login-Button-Business" href="{{url_for("main.businesslogin")}}">Business Login</a>
 </div>
 {% endblock content %}

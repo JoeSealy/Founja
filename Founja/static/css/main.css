@@ -54,40 +54,49 @@ main{
 
 .Login-container{
     height: 700px;
-    line-height: 700px;
 }
 
-.Login-Button-User {
-    color: black;
-    padding: 175px 175px;
-    text-align: center;
+a.Login-Button-User {
+    position: relative;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
     text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    cursor: pointer;
-    margin-left: 12%;
-    transition-duration: 0.4s;
-    border-radius: 2%;
-}
-
-.Login-Button-Business {
-    color: black;
-    padding: 175px 175px;
+    color: initial;
+    border-radius: 2px;
+    left:27.5%;
+    top: 40%;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    border-radius: 2%;
+    
 }
 
-.Login-Button-User:hover {
+a.Login-Button-Business {
+    position: relative;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border-radius: 2px;
+    text-decoration: none;
+    color: initial;
+    left: 32.5%;
+    top: 40%;
+    padding-left:4%;
+    padding-right:4%;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
+    text-align: center;
+}
+
+a.Login-Button-User:hover {
     background-color: whitesmoke;
     color: white;
 }
 
-.Login-Button-Business:hover{
+a.Login-Button-Business:hover{
     background-color: whitesmoke;
     color: white;
 }
