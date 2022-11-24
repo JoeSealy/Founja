@@ -15,3 +15,11 @@ def userlogin():
 @main.route("/businesslogin")
 def businesslogin():
     return render_template("businesslogin.html")
+
+@main.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+@main.route("/about")
+def about():
+    return render_template("about.html")
