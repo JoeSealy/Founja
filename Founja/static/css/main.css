@@ -101,6 +101,32 @@ a.Login-Button-Business:hover{
     color: white;
 }
 
+.main-title{
+    border: none;
+    height: 100px;
+    width: 400px;
+    font-size: 75px;
+}
+
+.form-group{
+    border: none;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.form-control-lg{
+    position: absolute;
+    display: block;
+    left: 250px;
+    margin: 20px
+}
+
+.submit-btn{
+    text-align: center;
+    border: none;
+}
+
 footer{
     background-color: white;
     height: 200px;

@@ -2,12 +2,11 @@
 
 {% block content %}
     
-<div class = "login-container">
+<div class = "Login-container">
     <form method = "POST" action="">
         {{form.hidden_tag()}}
         <fieldset class="form-group">
-            <legend class="main-title"> User Log In</legend>
-            
+            <legend class="main-title">Register</legend>
             <div class ="form-group">
                 {{form.email.label(class="form-control-label")}}
                 {% if form.email.errors%}
@@ -34,28 +33,22 @@
                     {{form.password(class="form-control form-control-lg")}}
                 {%endif%}
             </div>
-            <div class = "form-check">
-                {{form.remember(class = "form-check-input")}}
-                {{form.remember.label(class = "form-check-label")}}
-
+            <div class ="form-group">
+                {{form.confirm_password.label(class = "form-control-label")}}
+                {% if form.confirm_password.errors%}
+                    {{form.confirm_password(class="form-control form-control-lg is-invalid")}}
+                    <div class = "invalid-feedback">
+                        {% for error in form.confirm_password.errors%}
+                            <span> {{error}} </span>
+                        {% endfor %}
+                    </div>
+                {%else%}
+                    {{form.confirm_password(class="form-control form-control-lg")}}
+                {%endif%}
+            </div>
+            <div class= "submit-btn">
+                {{form.submit(class = "btn btn-outline-info")}}
             </div>
         </fieldset>
-        <div class= "form-group">
-            {{form.submit(class = "btn btn-outline-info")}}
-            <small class = "text-muted ml-2">
-                <a href= "#forgotmate">Forgot Password?</a>
-            </small>
-        </div>
     </form>
-</div>
-<divclass = "border-top pt-3">
-    <small class = "text-muted">
-       Need An Account?<a class = "ml-2" href = "{{url_for("main.register")}}">Sign Up Now</a>
-    </small>
-</div>
-    
-
-
-
-
 {% endblock content %}
