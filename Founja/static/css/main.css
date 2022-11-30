@@ -50,53 +50,39 @@ main{
     width: 70%;
     margin: auto;
     height:  1000px;
+    white-space: nowrap;
+    padding: 0;
+    overflow: hidden;
 }
 
-.Login-container{
-    height: 700px;
-}
-
-a.Login-Button-User {
+.Login-Button{
+    top: 150px;
+    overflow: visible;
     position: relative;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
     color: initial;
-    border-radius: 2px;
-    left:27.5%;
-    top: 40%;
-    padding-left:5%;
-    padding-right:5%;
-    padding-top: 12.5%;
-    padding-bottom: 12.5%;
     text-align: center;
+    border-radius: 2px;
+    width: 50%;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    font-size: 30px;
     
 }
 
-a.Login-Button-Business {
-    position: relative;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    border-radius: 2px;
-    text-decoration: none;
-    color: initial;
-    left: 32.5%;
-    top: 40%;
-    padding-left:4%;
-    padding-right:4%;
-    padding-top: 12.5%;
-    padding-bottom: 12.5%;
-    text-align: center;
+.bus-log{
+    left: -7px;
 }
 
-a.Login-Button-User:hover {
+a.Login-Button:hover {
     background-color: whitesmoke;
     color: white;
 }
 
-a.Login-Button-Business:hover{
+a.Login-Button:hover{
     background-color: whitesmoke;
     color: white;
 }
@@ -116,14 +102,39 @@ a.Login-Button-Business:hover{
 }
 
 .form-control-lg{
-    position: absolute;
+    position: relative;
     display: block;
-    left: 250px;
-    margin: 20px
+    left: 42%;
+    margin: 20px;
+    height: 20px;
+}
+.form-control-label{
+    border:none;
+    font-size: 25px;
 }
 
+.form-check-label{
+    border:none;
+    font-size: 20px;
+}
 .submit-btn{
     text-align: center;
+    border: none;
+}
+
+.text-muted{
+    display: block;
+    border: none;
+    margin: 20px;
+}
+
+.ml-2{
+    border: none;
+    font-size: 20px;
+    margin: 5px;;
+}
+
+.form-check{
     border: none;
 }
 

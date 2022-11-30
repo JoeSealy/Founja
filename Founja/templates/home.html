@@ -1,8 +1,6 @@
 {% extends  "layout.html"%}
 
 {% block content %}
-<div class = "Login-container">
-    <a class="Login-Button-User" href="{{url_for("main.userlogin")}}">User Login</a>
-    <a class="Login-Button-Business" href="{{url_for("main.businesslogin")}}">Business Login</a>
-</div>
+    <a class="Login-Button" href="{{url_for("main.userlogin")}}">User Login</a>
+    <a class="Login-Button bus-log" href="{{url_for("main.businesslogin")}}">Business Login</a>
 {% endblock content %}
